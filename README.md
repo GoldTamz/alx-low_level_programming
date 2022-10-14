@@ -1,2 +1,2 @@
 # alx-low_level_programming
-C Programming codes
+C Programming code
