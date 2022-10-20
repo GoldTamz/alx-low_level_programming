@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- *main-prints _putchar
+ *main - prints _putchar
  *
- *Return:(0)
+ *Return: (0)
  *
  */
-int main(void)
+int main(void) 
 {	
 	_putchar('_');
 	_putchar('p');
@@ -16,5 +16,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	return('0');
+	return ('0');
 }
