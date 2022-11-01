@@ -1,29 +1,17 @@
-#include "main.h"
+#include "main.h" 
+
 /**
-* _strspn - search a string for a set of bytes
-* @s: source string
-* @accept: accepted string
-*
-* Return: number of bytes in the init segment
-*/
-unsigned int _strspn(char *s, char *accept)
-{
-unsigned int a = 0, b, t = 0;
+* _memcpy -> memory copy
+* @dest: is destination memory
+* @src: is source memory
+* @n: number of bytes to be copied
+* Return: string copied from source
+**/
+char *_memcpy(char *dest, char *src, unsigned int n)
+{	
+unsigned int a;
 
-while (accept[a])
-{
-b = 0;
-
-while (s[b] != 32)
-{
-if (accept[a] == s[b])
-{
-t++;
-}
-
-b++;
-}
-a++;
-}
-return (t);
+for (a = 0; a < n; a++)
+dest[a] = src[a];
+return (dest);
 }
